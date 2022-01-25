@@ -1,0 +1,48 @@
+{
+  "name": "Bot Rotsong",
+  "description": "bot de música em python feito com disnake + lavalink.",
+  "repository": "",
+  "keywords": [
+    "discord.py",
+    "disnake",
+    "discord",
+    "lavalink",
+    "bot"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+    "env": {
+      "TOKEN": {
+        "description": "",
+        "required": true
+      },
+      "DEFAULT_PREFIX": {
+        "description": "",
+        "value": "v.",
+        "required": false
+      },
+      "SPOTIFY_CLIENT_ID": {
+        "description": "",
+        "required": false
+      },
+      "SPOTIFY_CLIENT_SECRET": {
+        "description": "",
+        "required": false
+      },
+      "MONGO": {
+        "description": "",
+        "required": false
+      },
+      "KEEP_ALIVE": {
+        "description": "Não precisa mexer aqui!",
+        "value": "true",
+        "required": false
+      }
+  }
+}
