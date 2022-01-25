@@ -1,7 +1,7 @@
 {
   "name": "Bot Rotsong",
   "description": "bot de música em python feito com disnake + lavalink.",
-  "repository": "",
+  "repository": "https://github.com/RotivV/Rotsong",
   "keywords": [
     "discord.py",
     "disnake",
