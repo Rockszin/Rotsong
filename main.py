@@ -12,7 +12,8 @@ from config_loader import load_config
 CONFIGS = load_config()
 
 if not CONFIGS["DEFAULT_PREFIX"]:
-    CONFIGS["DEFAULT_PREFIX"] = "!!!"
+    CONFIGS["DEFAULT_PREFIX"] = "v."
+
 
 if CONFIGS['START_LOCAL_LAVALINK'] == "true":
     run_lavalink(
@@ -118,6 +119,7 @@ async def start_bots():
     await asyncio.wait(
         [asyncio.create_task(bot.start(bot.token)) for bot in bots]
     )
+
 
 run_app()
 
