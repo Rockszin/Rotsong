@@ -176,7 +176,7 @@ class Misc(commands.Cog):
 
         embed.set_footer(
             icon_url=avatar,
-            text=f"DEV: DO BOT: {self.bot.owner}"
+            text=f"Dev: {self.bot.owner}"
         )
         
 
